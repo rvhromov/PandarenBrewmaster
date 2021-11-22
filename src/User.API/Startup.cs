@@ -28,7 +28,7 @@ namespace User.API
 
             services.AddAutoMapper(typeof(UserProfile), typeof(MapperProfiles.UserProfile));
             
-            services.AddAppDbContext(Configuration.GetConnectionString("AppDbContext"));
+            services.AddAppDbContext(Configuration);
             services.RegisterTypes(Configuration);
         }
         
